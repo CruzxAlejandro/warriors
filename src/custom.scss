@@ -1,0 +1,16 @@
+// Overwrite here
+
+$primary: #1a1a1a;
+$secondary:#474fdf;
+
+:root {
+    body {
+        background-color: #fff;
+    }
+
+}
+
+
+// /* The following line can be included in a src/App.scss */
+// @import '~bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";
