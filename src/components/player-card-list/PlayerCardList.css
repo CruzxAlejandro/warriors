@@ -1,0 +1,13 @@
+.playerName {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+ .playerDetails {
+    text-align: center;
+ }
+
+ .card {
+    padding: 2rem;
+    min-height: 300px;
+ }
