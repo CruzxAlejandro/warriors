@@ -5,12 +5,13 @@ const PlayerCardList = ({players}) => {
     return (
         <Container>
             <Row><h1>Roster</h1></Row>
-            <Row className="d-flex">
+            <Row className="d-flex align-items-stretch">
             {players.map((player) => (                 
-                    <Col xs="4" className="card">
-                    <Row>
+                    <Col xs="4" className="playerCard">
+                    <Row className="d-flex imgNum">
                         <img src={player.img}/>
-                    </Row>
+                        <h1 className="numberMask">{player.id}</h1>
+                    </Row>        
                     <Row>
                     <h2 className="playerName">{player.name}</h2>
                     <Col className="playerDetails"><p>{player.position}</p><p>Position</p></Col>
