@@ -5,19 +5,17 @@ const PlayerCardList = ({players}) => {
     return (
         <Container>
             <Row><h1>Roster</h1></Row>
-            <Row className="d-flex align-items-stretch">
+            <Row className="d-flex">
             {players.map((player) => (                 
-                    <Col xs="4" className="playerCard">
+                    <Col xs="12" md="4" className="playerCard">
                     <Row className="d-flex imgNum">
                         <img src={player.img}/>
                         <h1 className="numberMask">{player.id}</h1>
                     </Row>        
-                    <Row>
-                    <h2 className="playerName">{player.name}</h2>
-                    <Col className="playerDetails"><p>{player.position}</p><p>Position</p></Col>
-                    <Col className="playerDetails"><p>{player.ht}</p><p>Height</p></Col>
-                    <Col className="playerDetails"><p>{player.wt}</p><p>Weight</p></Col>
-                    <Col className="playerDetails"><p>{player.id}</p><p>Number</p></Col>
+                    <Row className="d-flex">
+                    <Col xs="12"><h2 className="playerName">{player.name}</h2></Col>
+                    <Col className="playerDetails"><p>{player.position}</p></Col>
+                    <Col className="playerDetails"><p>{player.id}</p></Col>
                     </Row>                        
                     </Col>                 
             )
@@ -29,3 +27,9 @@ const PlayerCardList = ({players}) => {
 
 
 export default PlayerCardList;
+
+
+/*
+<Col className="playerDetails"><p>{player.ht}</p><p>Height</p></Col>
+<Col className="playerDetails"><p>{player.wt}</p><p>Weight</p></Col>
+*/
