@@ -1,21 +1,42 @@
 import React from "react";
-import "./PlayerCard.css"
-import { Container, Button, Row, Col} from "react-bootstrap";
+import "./PlayerCard.css";
+import { Container, Button, Row, Col } from "react-bootstrap";
 import PlayerCardList from "../player-card-list/PlayerCardList";
 
-const players =  [
-    {name: "Stephen Curry", position: "PG", ht: "6'2", wt: "190", id: '30', img: "/images/Curry.png"},
-    {name: "Klay Thompson", position: "SG", ht: "6'5", wt: "200", id: '11', img: "/images/Klay.png"},
-    {name: "Draymond Green", position: "PF", ht: "6'7", wt: "210", id: '23', img: "/images/Dray.png"}
-]
+const players = [
+  {
+    name: "Stephen Curry",
+    position: "PG",
+    ht: "6'2",
+    wt: "190",
+    id: "30",
+    img: "/images/Curry.png",
+  },
+  {
+    name: "Klay Thompson",
+    position: "SG",
+    ht: "6'5",
+    wt: "200",
+    id: "11",
+    img: "/images/Klay.png",
+  },
+  {
+    name: "Draymond Green",
+    position: "PF",
+    ht: "6'7",
+    wt: "210",
+    id: "23",
+    img: "/images/Dray.png",
+  },
+];
 
 const PlayerCard = () => {
-    return (
+  return (
     <>
-    <PlayerCardList players={players}/>
+      <PlayerCardList players={players} />
     </>
-    )
-}
+  );
+};
 
 export default PlayerCard;
 
